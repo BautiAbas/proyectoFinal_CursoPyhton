@@ -1,0 +1,34 @@
+{% extends 'index.html' %}
+
+{% block masterHead %}
+<section class="page-section bg-primary text-white text-center">
+    <div>
+        <h1 class="page-section text-uppercase mb-0">CREACIÓN DE USUARIOS O BLOGS</h1>
+    </div> 
+            <!-- Top navigation-->
+    <div class="navbar navbar-expand-lg">
+            <div class="container d-flex justify-content-center mb-3">
+                <form action= "{% url 'pantallaUsuarios' %}" class="text-white" metod="post">
+
+                    <h2 class="page-section bg-primary text-white text-uppercase p-3 mt-3 mb-3">USUARIOS</h2>
+                    <div class="mb-3 mt-3">
+                      <label for="nombre" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="nombre">
+                    </div>
+                    <div class="mb-3 text-white">
+                        <label for="nombreUsuario" class="form-label">Usuario</label>
+                        <input type="text" class="form-control" id="nombreUsuario">
+                      </div>
+                    <div class="mb-3 text-white">
+                      <label for="contraseñaUsuario" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control" id="contraseñaUsuario">
+                    </div>
+                    <input button type="submit" class="btn btn-secondary"></button>
+                </form>
+    </div>
+</section>   
+{% endblock masterHead %}
+
+{% block aboutSection %}
+{% endblock aboutSection %}
+
