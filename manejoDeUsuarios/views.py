@@ -35,5 +35,5 @@ def crearUsuario(request):
         return redirect('inicio')
 
     formulario = UsuarioFormulario()
-    return render(request, 'pantallaUsuarios.html', {'formulario': formulario})
+    return render(request, 'pantallaUsuarios.html', {'formulario': formulario, 'nuevoUsuario': nuevoUsuario})
 

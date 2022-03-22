@@ -3,7 +3,7 @@ from django import forms
 class UsuarioFormulario(forms.Form):
     nombre = forms.CharField(max_length=20)
     nombreUsuario = forms.CharField(max_length=20)
-    contraseñaUsuario = forms.CharField(max_length=30)
+    contraseñaUsuario = forms.CharField(max_length=30,)
 
 class BlogFormulario(forms.Form):
     titulo = forms.CharField(max_length=20)
